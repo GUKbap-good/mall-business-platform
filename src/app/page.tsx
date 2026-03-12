@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {
   ChevronRight, TrendingUp, Users, FileText,
-  MapPin, ShoppingCart, Heart,
+  ShoppingCart, Heart,
   MessageCircle, Star, ArrowUpRight, Zap, Shield, Store, Wrench,
 } from "lucide-react";
 import Header from "@/components/layout/Header";
@@ -17,9 +17,9 @@ const stats = [
 const services = [
   { title: "정부 지원사업", description: "지자체별 지원금·대출·교육 정보를 실시간으로 모아둡니다", iconBg: "bg-blue-500", Icon: FileText, href: "/grants" },
   { title: "사장님 커뮤니티", description: "업종별 노하우 공유, 공동 상담, 자유 게시판", iconBg: "bg-green-500", Icon: Users, href: "/community" },
-  { title: "DX 디지털 도구", description: "재고관리, QR 메뉴판, 마진 계산기까지 한 번에", iconBg: "bg-[#EA4F1E]", Icon: Wrench, href: "/dx" },
-  { title: "동네 사장님 지도", description: "연합 마케팅, 공동구매, 쿠폰 발행으로 매출 UP", iconBg: "bg-pink-500", Icon: MapPin, href: "/local" },
-  { title: "중고 거래소", description: "포스기, 냉장고, 테이블 등 업소용 집기 거래·나눔", iconBg: "bg-amber-500", Icon: ShoppingCart, href: "/marketplace" },
+  { title: "서비스", description: "재고관리, QR 메뉴판, 마진 계산기까지 한 번에", iconBg: "bg-[#EA4F1E]", Icon: Wrench, href: "/dx" },
+  { title: "식자재 시세", description: "실시간 식자재 가격 추이와 변동 분석을 한눈에", iconBg: "bg-teal-500", Icon: TrendingUp, href: "/price" },
+  { title: "거래 + 공동구매", description: "포스기, 냉장고, 테이블 등 업소용 집기 거래·나눔", iconBg: "bg-amber-500", Icon: ShoppingCart, href: "/marketplace" },
 ];
 
 const grants = [
@@ -90,9 +90,9 @@ function HeroSection() {
           <div className="absolute top-[26%] left-[19%] w-12 h-12 bg-white rounded-2xl shadow-md flex items-center justify-center">
             <TrendingUp className="w-5 h-5 text-purple-500" />
           </div>
-          {/* MapPin - 8시 */}
+          {/* Store - 8시 */}
           <div className="absolute top-[58%] left-[17%] w-12 h-12 bg-white rounded-2xl shadow-md flex items-center justify-center">
-            <MapPin className="w-5 h-5 text-pink-500" />
+            <Store className="w-5 h-5 text-pink-500" />
           </div>
           {/* ShoppingCart - 6시 */}
           <div className="absolute bottom-[13%] left-1/2 -translate-x-1/2 w-12 h-12 bg-white rounded-2xl shadow-md flex items-center justify-center">

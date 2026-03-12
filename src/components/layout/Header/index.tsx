@@ -3,7 +3,7 @@
 import Link from "next/link";
 import {
   Bell, LogIn, Store, Home, FileText, Users,
-  Wrench, MapPin, ShoppingCart,
+  Wrench, ShoppingCart, TrendingUp,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -11,9 +11,9 @@ const navItems = [
   { label: "홈", href: "/", Icon: Home },
   { label: "지원사업", href: "/grants", Icon: FileText },
   { label: "커뮤니티", href: "/community", Icon: Users },
-  { label: "DX 도구", href: "/dx", Icon: Wrench },
-  { label: "동네가게", href: "/local", Icon: MapPin },
-  { label: "중고거래", href: "/marketplace", Icon: ShoppingCart },
+  { label: "서비스", href: "/dx", Icon: Wrench },
+  { label: "시세", href: "/price", Icon: TrendingUp },
+  { label: "광장", href: "/marketplace", Icon: ShoppingCart },
 ];
 
 export default function Header() {
