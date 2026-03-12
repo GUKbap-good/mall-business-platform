@@ -1,0 +1,30 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#EA4F1E",
+          hover: "#D44418",
+          light: "#FFF7EF",
+        },
+        dark: {
+          DEFAULT: "#1E2640",
+          footer: "#192031",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-noto-sans-kr)", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
